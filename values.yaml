@@ -1,0 +1,37 @@
+# Default values for helm-guestbook.
+# This is a YAML-formatted file.
+
+replicaCount: 2
+
+image:
+  repository: marioscloud/my-python-app
+  tag: v1
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 5000
+
+ingress:
+  enabled: false
+  annotations: {}
+  path: /
+  hosts:
+    - chart-example.local
+  tls: []
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+# Custom variable used in rollout.yaml
+containerPort: 5000
