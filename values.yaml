@@ -5,7 +5,7 @@ replicaCount: 2
 
 image:
   repository: marioscloud/my-python-app
-  tag: v1
+  tag: "5ec17016d72b0b052d1a8f6c1ac3cf66b439dfb5"
   pullPolicy: Always
 
 service:
