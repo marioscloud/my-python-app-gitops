@@ -84,4 +84,4 @@ argocd app create mastering-blue-green \
 Modify application behavior inside `app.py` within the **Source Code Repository** and push to `master`. The infrastructure automatically triggers artifact generation, updates target cluster metadata, and runs safe Blue-Green environment migrations dynamically.
 
 ---
-*Mario Araos. Devops Engineer | CKA | LFCS. Maintained to showcase technical proficiency in Cloud Architecture, Continuous Delivery systems, and Site Reliability Engineering (SRE).*
+*Mario Araos. Devops Engineer | CKA | LFCS | Maintained to showcase technical proficiency in Cloud Architecture, Continuous Delivery systems, and Site Reliability Engineering (SRE).*
